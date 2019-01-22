@@ -10,17 +10,17 @@ from src.follow_protocol import follow_protocol
 from src.unfollow_protocol import unfollow_protocol
 
 bot = InstaBot(
-    login="username",
-    password="password",
-    like_per_day=1000,
+    login="ab_ski_school",
+    password="Adamello.Brenta",
+    like_per_day=700,
     comments_per_day=0,
-    tag_list=['follow4follow', 'f4f', 'cute', 'l:212999109'],
+    tag_list=['madonnadicampiglio', 'campiglio', 'snow', 'mountains', 'l:316933983', 'l:219288263', 'l:2219315091414792', 'l:935562258', 'dolomiti', 'dolomites', 'skiinstructor', 'skiinstructors', 'skischool', 'mdc', 'skiing', 'ski', 'winterholiday', 'winter', 'sci', 'winterwonderland', 'snowboard', 'trentino' ],
     tag_blacklist=['rain', 'thunderstorm'],
     user_blacklist={},
     max_like_for_one_tag=50,
     follow_per_day=300,
     follow_time=1 * 60,
-    unfollow_per_day=300,
+    unfollow_per_day=700,
     unfollow_break_min=15,
     unfollow_break_max=30,
     log_mod=0,
@@ -40,15 +40,7 @@ bot = InstaBot(
     # Use unwanted_username_list to block usernames containing a string
     ## Will do partial matches; i.e. 'mozart' will block 'legend_mozart'
     ### 'free_followers' will be blocked because it contains 'free'
-    unwanted_username_list=[
-        'second', 'stuff', 'art', 'project', 'love', 'life', 'food', 'blog',
-        'free', 'keren', 'photo', 'graphy', 'indo', 'travel', 'art', 'shop',
-        'store', 'sex', 'toko', 'jual', 'online', 'murah', 'jam', 'kaos',
-        'case', 'baju', 'fashion', 'corp', 'tas', 'butik', 'grosir', 'karpet',
-        'sosis', 'salon', 'skin', 'care', 'cloth', 'tech', 'rental', 'kamera',
-        'beauty', 'express', 'kredit', 'collection', 'impor', 'preloved',
-        'follow', 'follower', 'gain', '.id', '_id', 'bags'
-    ],
+    unwanted_username_list=[],
     unfollow_whitelist=['example_user_1', 'example_user_2'])
 while True:
 
